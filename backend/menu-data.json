@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1734505487611",
+    "name": "System management",
+    "parentId": null,
+    "children": [
+      {
+        "id": "1734505497529",
+        "name": "Systems",
+        "parentId": "1734505487611",
+        "children": [
+          {
+            "id": "1734505517703",
+            "name": "Systems Code",
+            "parentId": "1734505497529",
+            "children": [
+              {
+                "id": "1734505535073",
+                "name": "Code Registration",
+                "parentId": "1734505517703",
+                "children": [
+                  {
+                    "id": "1734509747938",
+                    "name": "Test Node",
+                    "parentId": "1734505535073",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1734510504561",
+        "name": "Testing Another System",
+        "parentId": "1734505487611",
+        "children": [
+          {
+            "id": "1734510603877",
+            "name": "Test",
+            "parentId": "1734510504561",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "1734584542791",
+        "name": "55555",
+        "parentId": "1734505487611",
+        "children": []
+      }
+    ]
+  }
+]
