@@ -54,7 +54,7 @@ const MenuTree: React.FC = () => {
     e.preventDefault();
 
     if (!newNodeName) {
-      alert("Please enter a name for the new node.");
+      alert("Please enter a name for the new Menu.");
       return;
     }
 

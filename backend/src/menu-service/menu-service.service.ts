@@ -23,7 +23,7 @@ export class MenuServiceService {
     }
   
     const newMenu = {
-      id: new Date().getTime().toString(), // Generate a unique ID
+      id: this.generateRandomIdWithDashes(), // Generate a unique ID
       name: createMenuDto.name,
       parentId: createMenuDto.parentId || null,
       children: [],
@@ -46,6 +46,16 @@ export class MenuServiceService {
   
     return { data: newMenu };
   }
+
+
+  private generateRandomIdWithDashes() {
+    const randomId = Array.from({ length: 32 }, () =>
+      Math.floor(Math.random() * 16).toString(16)
+    ).join('');
+    return `${randomId.slice(0, 8)}-${randomId.slice(8, 12)}-${randomId.slice(12, 16)}-${randomId.slice(16, 20)}-${randomId.slice(20)}`;
+  }
+  
+  
   
   private addChildToParent(menus: any[], parentId: string, newMenu: any): boolean {
     for (const menu of menus) {
