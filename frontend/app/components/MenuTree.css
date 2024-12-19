@@ -1,0 +1,39 @@
+.menu-tree {
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 1px solid #ccc;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-children {
+  margin-left: 16px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.add-node-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: auto;
+}
